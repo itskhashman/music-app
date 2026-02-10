@@ -26,8 +26,8 @@ music-app\ \
 1. Clone Backend & Frontend
 
 ```bash
-git clone https://github.com/itskhashman/music-app-backend.git backend
-git clone https://github.com/itskhashman/music-app-frontend.git frontend
+git clone https://github.com/itskhashman/music-app-backend.git
+git clone https://github.com/itskhashman/music-app-frontend.git
 ```
 
 2. Create Environment Files
