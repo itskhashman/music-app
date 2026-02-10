@@ -1,0 +1,28 @@
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "8000:8000"
+    env_file:
+      - ./backend/.env
+    volumes:
+      - backend_db:/app/db
+    command: >
+     sh -c "python manage.py migrate &&
+      python manage.py collectstatic --noinput &&
+       gunicorn backend.wsgi:application --bind 0.0.0.0:8000"
+
+
+  frontend:
+    build:
+      context: ./frontend
+      args:
+        NEXT_PUBLIC_API_URL: "http://localhost:8000"
+        NEXT_PUBLIC_GRAPHQL_ENDPOINT: "/graphql/"
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+
+volumes:
+  backend_db:
