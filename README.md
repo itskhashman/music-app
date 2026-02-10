@@ -59,3 +59,6 @@ docker compose up --build
 ```
 
 
+Frontend On http://localhost:3000
+
+Backend On http://localhost:8000/graphql/ OR http://localhost:8000/music/
