@@ -13,11 +13,13 @@ It connects:
 
 You must organize your folders like this:
 
-music-app-docker/
- ├── backend/
- ├── frontend/
- ├── docker-compose.yml
+root\ \
+ ├── backend/\
+ ├── frontend/\
+ ├── docker-compose.yml\
  └── README.md
+- `backend/` — Django project 
+- `frontend/` — React project
 
 ## 🚀 Setup Instructions
 
@@ -28,14 +30,11 @@ git clone https://github.com/itskhashman/backend.git backend
 git clone https://github.com/itskhashman/frontend.git frontend
 ```
 
-This will create the required folder structure.
-
 2. Create Environment Files
-🔐 Backend .env
 
-Create:
+   Create:
 
-- backend/.env
+ - backend/.env
 
 
    Add:
@@ -59,8 +58,4 @@ NEXT_PUBLIC_GRAPHQL_ENDPOINT=/graphql/
 docker compose up --build
 ```
 
-Backend will be available at: http://localhost:8000
 
-GraphQL endpoint: http://localhost:8000/graphql/
-
-Frontend will be available at: http://localhost:3000
