@@ -14,27 +14,27 @@ It connects:
 You must organize your folders like this:
 
 root\ \
- ├── backend/\
- ├── frontend/\
+ ├── music-app-backend/\
+ ├── music-app-frontend/\
  ├── docker-compose.yml\
  └── README.md
-- `backend/` — Django project 
-- `frontend/` — React project
+- `music-app-backend/` — Django project 
+- `music-app-frontend/` — React project
 
 ## 🚀 Setup Instructions
 
 1. Clone Backend & Frontend
 
 ```bash
-git clone https://github.com/itskhashman/backend.git backend
-git clone https://github.com/itskhashman/frontend.git frontend
+git clone https://github.com/itskhashman/music-app-backend.git backend
+git clone https://github.com/itskhashman/music-app-frontend.git frontend
 ```
 
 2. Create Environment Files
 
    Create:
 
- - backend/.env
+ - music-app-backend/.env
 
 
    Add:
@@ -43,7 +43,7 @@ DJANGO_SECRET_KEY=dev-secret
 DJANGO_DEBUG=True
 DJANGO_ALLOWED_HOSTS=127.0.0.1,localhost,0.0.0.0
 ```
-- Frontend .env
+- music-app-frontend .env
 
    Add:
 ```bash
