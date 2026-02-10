@@ -13,7 +13,7 @@ It connects:
 
 You must organize your folders like this:
 
-root\ \
+music-app\ \
  ├── music-app-backend/\
  ├── music-app-frontend/\
  ├── docker-compose.yml\
